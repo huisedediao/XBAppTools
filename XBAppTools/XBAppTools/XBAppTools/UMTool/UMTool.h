@@ -21,6 +21,15 @@
 // */
 //+ (BOOL)isInstall:(UMSocialPlatformType)platformType;
 //
+/**
+ *  第三方登陆
+ *
+ *  @param platformType 平台类型 @see UMSocialPlatformType
+ *
+ *  @param completion 登陆回调
+ */
+//+ (void)getAuthWithUserInfoFrom:(UMSocialPlatformType)platformType completion:(void (^)(id result,NSError *error))completion;
+
 /////分享消息
 //+ (void)shareText:(NSString *)text toPlatformType:(UMSocialPlatformType)platformType resultBlock:(void(^)(id data,NSError *error))resultBlock currentViewController:(UIViewController *)currentViewController;
 /////分享aa订单到小程序

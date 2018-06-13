@@ -25,6 +25,25 @@
 //    return [UMSocialManagerInstance isInstall:platformType];
 //}
 //
+/**
+ *  第三方登陆
+ *
+ *  @param platformType 平台类型 @see UMSocialPlatformType
+ *
+ *  @param completion 登陆回调
+ */
+//+ (void)getAuthWithUserInfoFrom:(UMSocialPlatformType)platformType completion:(void (^)(id result,NSError *error))completion
+//{
+//    [[UMSocialManager defaultManager] getUserInfoWithPlatform:platformType currentViewController:nil completion:^(id result, NSError *error) {
+//        if (completion)
+//        {
+//            dispatch_async(dispatch_get_main_queue(), ^{
+//                completion(result,error);
+//            });
+//        }
+//    }];
+//}
+//
 /////分享消息
 //+ (void)shareText:(NSString *)text toPlatformType:(UMSocialPlatformType)platformType resultBlock:(void(^)(id data,NSError *error))resultBlock currentViewController:(UIViewController *)currentViewController
 //{
