@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F183E0D220D347E200D12FFE /* XBJumpSettingTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F183E0D120D347E200D12FFE /* XBJumpSettingTool.m */; };
 		F1B0839F20B3B6BC00FB3F3D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B0839E20B3B6BC00FB3F3D /* AppDelegate.m */; };
 		F1B083A220B3B6BC00FB3F3D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B083A120B3B6BC00FB3F3D /* ViewController.m */; };
 		F1B083A520B3B6BC00FB3F3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1B083A320B3B6BC00FB3F3D /* Main.storyboard */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F183E0D020D347E200D12FFE /* XBJumpSettingTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XBJumpSettingTool.h; sourceTree = "<group>"; };
+		F183E0D120D347E200D12FFE /* XBJumpSettingTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XBJumpSettingTool.m; sourceTree = "<group>"; };
 		F1B0839A20B3B6BC00FB3F3D /* XBAppTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XBAppTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1B0839D20B3B6BC00FB3F3D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F1B0839E20B3B6BC00FB3F3D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -164,6 +167,8 @@
 			children = (
 				F1B083D820B3BB8A00FB3F3D /* XBAppTool.h */,
 				F1B083D720B3BB8900FB3F3D /* XBAppTool.m */,
+				F183E0D020D347E200D12FFE /* XBJumpSettingTool.h */,
+				F183E0D120D347E200D12FFE /* XBJumpSettingTool.m */,
 			);
 			path = AppTool;
 			sourceTree = "<group>";
@@ -345,6 +350,7 @@
 				F1B083AD20B3B6BC00FB3F3D /* main.m in Sources */,
 				F1B083EF20B3BD5800FB3F3D /* MapTool_GD.m in Sources */,
 				F1B0839F20B3B6BC00FB3F3D /* AppDelegate.m in Sources */,
+				F183E0D220D347E200D12FFE /* XBJumpSettingTool.m in Sources */,
 				F1B083D920B3BB8A00FB3F3D /* XBAppTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,7 +515,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RC2BP8QGY9;
 				INFOPLIST_FILE = XBAppTools/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = XBAnimation.XBAppTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -522,7 +530,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RC2BP8QGY9;
 				INFOPLIST_FILE = XBAppTools/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = XBAnimation.XBAppTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
