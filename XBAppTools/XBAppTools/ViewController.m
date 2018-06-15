@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "XBJumpSettingTool.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+//    [[XBJumpSettingTool shared] jumpToSettingWithType:XBJumpSettingType_WIFI errorBlock:^{
+//        NSLog(@"无法打开wifi设置");
+//    }];
 }
 
 

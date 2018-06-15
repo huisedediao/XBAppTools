@@ -59,4 +59,9 @@ typedef enum : NSUInteger {
 + (instancetype)shared;
 ///errorBlcok：无法跳转时的回调
 - (void)jumpToSettingWithType:(XBJumpSettingType)type errorBlock:(void(^)(void))errorBlock;
+/*
+ successBlcok: ios10和ios10以后才起作用
+ errorBlcok：无法跳转时的回调
+ */
+- (void)jumpToSettingWithType:(XBJumpSettingType)type successBlcok:(void(^)(void))successBlcok errorBlock:(void(^)(void))errorBlock;
 @end

@@ -38,7 +38,41 @@
     NSString * urlStringOld = [urlString stringByReplacingOccurrencesOfString:@"App-P" withString:@"p"];
     if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:urlString]])
     {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlString]];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlString] options:@{} completionHandler:^(BOOL success) {
+            
+        }];
+    }
+    else if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:urlStringOld]])
+    {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlStringOld]];
+    }
+    else
+    {
+        if (errorBlock)
+        {
+            errorBlock();
+        }
+    }
+}
+/*
+ successBlcok: ios10和ios10以后才起作用
+ errorBlcok：无法跳转时的回调
+ */
+- (void)jumpToSettingWithType:(XBJumpSettingType)type successBlcok:(void(^)(void))successBlcok errorBlock:(void(^)(void))errorBlock
+{
+    NSString * urlString = self.arr_settingName[type];
+    NSString * urlStringOld = [urlString stringByReplacingOccurrencesOfString:@"App-P" withString:@"p"];
+    if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:urlString]])
+    {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlString] options:@{} completionHandler:^(BOOL success) {
+            if (success)
+            {
+                if (successBlcok)
+                {
+                    successBlcok();
+                }
+            }
+        }];
     }
     else if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:urlStringOld]])
     {
