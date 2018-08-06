@@ -27,4 +27,7 @@
 ///修复tableViewCell上的按钮点击延迟
 + (void)setTableViewDelaysContentTouchesNO:(UITableView *)tableView;
 
+/// 读取本地JSON文件
++ (NSDictionary *)readLocalFileWithName:(NSString *)name;
+
 @end
